@@ -1,11 +1,11 @@
 {
   "name": "@rocket.chat/uikit-playground",
   "private": true,
-  "version": "0.6.12",
+  "version": "0.6.13-rc.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build-preview": "tsc && vite build",
+    "dev": "node init && vite",
+    "build-preview": "node init && tsc && vite build",
     ".:build-preview-move": "mkdir -p ../../.preview/ && cp -r ./dist ../../.preview/uikit-playground",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
